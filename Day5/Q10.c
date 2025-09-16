@@ -3,14 +3,18 @@
 #include<stdio.h>
 
 int main(){
-    int s;
+    int t, h, m, s, ls;
     printf("Enter time in seconds: ");
-    scanf("%d", &s);
+    scanf("%d", &t);
 
-    int h, m;
+    h = t / 3600;
+    s = t % 3600;
 
-    h = s / 3600
-    s = s % 3600
+    m = s / 60;
+    ls = s % 60;
+    
+    printf("%d:%d:%d is time", h, m, ls);
 
-    m = 
+    return 0;
+
 }
